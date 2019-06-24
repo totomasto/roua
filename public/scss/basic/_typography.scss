@@ -1,0 +1,345 @@
+/**
+* Typography Styles
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+html {
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+body {
+	overflow: hidden;
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $body-font;
+	color: $body-color;
+	font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+	color: $body-color;
+	opacity: 1;
+}
+
+:-moz-placeholder {
+	color: $body-color;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: $body-color;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: $body-color;
+	opacity: 1;
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: $body-font;
+}
+
+a {
+	transition: all 0.4s ease-in-out 0s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+dl,
+dd,
+menu,
+ol,
+ul,
+table,
+caption,
+hr {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $heading-font;
+	line-height: 1.3;
+	color: $heading-color;
+}
+
+h1,
+.h1 {
+	font-size: 48px;
+}
+
+h2,
+.h2 {
+	font-size: 34px;
+}
+
+h3,
+.h3 {
+	font-size: 24px;
+}
+
+h4,
+.h4 {
+	font-size: 20px;
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+}
+
+h6,
+.h6 {
+	font-size: 14px;
+}
+
+
+@media #{$md-layout} {
+	h1,
+	.h1 {
+		font-size: 44px;
+	}
+	
+	h2,
+	.h2 {
+		font-size: 30px;
+	}
+	h3,
+	.h3 {
+		font-size: 20px;
+	}
+}
+
+@media #{$sm-layout} {
+	h1,
+	.h1 {
+		font-size: 36px;
+	}
+	
+	h2,
+	.h2 {
+		font-size: 26px;
+	}
+	h3,
+	.h3 {
+		font-size: 18px;
+	}
+	h4,
+	.h4{
+		font-size: 16px;
+	}
+}
+
+@media #{$xs-layout} {
+	h1,
+	.h1 {
+		font-size: 36px;
+	}
+	
+	h2,
+	.h2 {
+		font-size: 26px;
+	}
+	h3,
+	.h3 {
+		font-size: 20px;
+	}
+	h4,
+	.h4{
+		font-size: 16px;
+	}
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	font-weight: 700;
+}
+
+
+h4,
+.h4,
+h5,
+.h5 {
+	font-weight: 600;
+}
+
+h6,
+.h6 {
+	font-weight: 500;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	outline: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+input,
+button,
+select,
+textarea {
+	background: transparent;
+	border: 1px solid #cccccc;
+	transition: all 0.4s ease-out 0s;
+	color: $body-color;
+	@include placeholder-color($body-color);
+	&:focus,
+	&:active {
+		outline: none;
+		border-color: $theme-color;
+	}
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	font-size: 14px;
+}
+
+input,
+select {
+	height: 40px;
+	padding: 0 15px;
+}
+
+blockquote {
+	font-size: 18px;
+	color: #666666;
+	line-height: 28px;
+	font-style: italic;
+	font-weight: 400;
+	border-left: 4px solid $theme-color;
+	padding-left: 15px;
+	font-family: $body-font;
+	font-weight: 400;
+	text-align: left;
+}
+
+.list-style-1{
+	padding-left: 0;
+	li{
+		list-style: none;
+		position: relative;
+		padding-left: 35px;
+		font-family: $heading-font;
+		font-weight: 600;
+		color: $body-color;
+		& + li{
+			margin-top: 15px;
+		}
+		&::before{
+			content: "\f058";
+			font-family: 'fontAwesome';
+			font-size: 20px;
+			color: $theme-color;
+			position: absolute;
+			width: 35px;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+.nice-select{
+	display: block;
+	width: 100%;
+	border-radius: 0px;
+	border: none;
+	padding: 0;
+	float: none;
+	background-color: transparent;
+	border: 1px solid #cccccc;
+	&::after{
+		content: "\f107";
+		font-family: 'fontAwesome';
+		position: absolute;
+		left: auto;
+		right: 0;
+		height: 35px;
+		line-height: 35px;
+		width: 35px;
+		border-radius: 100%;
+		display: inline-block;
+		font-size: 18px;
+		padding: 0px 12px;
+		border: none;
+		transform: rotate(0);
+		top: 7px;
+		bottom: auto;
+		transform-origin: 50% 50%;
+	}
+	span.current{
+		display: block;
+		position: relative;
+		color: $body-color;
+		letter-spacing: 0;
+		font-size: 14px;
+		padding: 0 15px;
+	}
+	.list{
+		width: 100%;
+		border-radius: 0px;
+		margin-top: 1px;
+		max-height: 280px;
+		overflow-y: auto;
+	}
+	&.open{
+		&::after{
+			transform: rotate(180deg);
+		}
+	}
+	&:active, &.open, &:focus{
+		border-color: $theme-color;
+	}
+}

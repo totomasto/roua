@@ -1,0 +1,123 @@
+/**
+ * Team Member Details
+ */
+
+.team-member-details{
+    .team-member-details-image{
+        text-align: center;
+    }
+    .team-member-details-content{
+        & > h5{
+            margin-bottom: 0;
+            font-weight: 700;
+            margin-top: 15px;
+            text-align: center;
+        }
+        & > span{
+            color: $theme-color;
+            font-size: 13px;
+            display: block;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        & > .team-member-info{
+            padding-left: 0;
+            padding: 10px 25px;
+            margin-bottom: 0;
+            border-bottom: 1px solid #e5e5e5;
+            li{
+                list-style: none;
+                padding-bottom: 10px;
+                font-size: 14px;
+                @include clearfix;
+                span{
+                    float: right;
+                }
+            }
+        }
+    }
+    .social-icons{
+        text-align: center;
+        ul{
+            padding-top: 10px;
+        }
+    }
+}
+
+.doctors-profile-rightside{
+    p{
+        margin-bottom: 20px;
+    }
+    &-text{
+        column-count: 2;
+        column-gap: 30px;
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media #{$md-layout}{
+    .team-member-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .team-member-details-image{
+            flex: 0 0 calc(40% - 15px);    
+        }
+        .team-member-details-content{
+            flex: 0 0 calc(60% - 15px);
+        }
+    }
+    .doctors-profile-rightside {
+        margin-top: 50px;
+    }
+}
+
+
+@media #{$sm-layout}{
+    .team-member-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .team-member-details-image{
+            flex: 0 0 calc(50% - 15px);    
+        }
+        .team-member-details-content{
+            flex: 0 0 calc(50% - 15px);
+        }
+    }
+    .doctors-profile-rightside {
+        margin-top: 50px;
+    }
+    .doctors-profile-rightside-text{
+        column-count: 1;
+        column-gap: 0;
+    }
+    .team-member-details .team-member-details-content > .team-member-info {
+        padding: 0;
+    }
+}
+
+
+@media #{$xs-layout}{
+    .team-member-details{
+        display: block;
+        .team-member-details-content{
+            margin-top: 30px;
+            & > .team-member-info{
+                padding: 10px 0;
+            }
+        }
+    }
+    .doctors-profile-rightside {
+        margin-top: 40px;
+    }
+    .doctors-profile-rightside-text{
+        column-count: 1;
+        column-gap: 0;
+    }
+}
+
+

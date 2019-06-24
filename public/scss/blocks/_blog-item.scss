@@ -1,0 +1,105 @@
+/**
+ * Blog Item
+ */
+
+.blog-item{
+    .blog-item-meta{
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 13px;
+            color: $body-color;
+            padding: 5px 0;
+            &::after{
+                content: "|";
+                margin: 0 5px;
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            i{
+                margin-right: 2px;
+            }
+            a{
+                color: $body-color;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        .blog-item-meta-date{
+            background: $theme-color;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: $heading-font;
+            padding: 8px 17px;
+            font-size: 14px;
+            margin-right: 8px;
+            &::after{
+                display: none;
+            }
+            a{
+                color: #ffffff;
+            }
+        }
+    }
+    .blog-item-image{
+        overflow: hidden;
+        margin-bottom: 30px;
+        display: block;
+        img{
+            width: 100%;
+            transition: all 0.3s ease-in-out 0s;
+            transform: scale(1);
+        }
+    }
+    &:hover{
+        .blog-item-image{
+            img{
+                transform: scale(1.2);
+            }
+        }
+    }
+    & > h6{
+        font-size: 15px;
+        font-weight: 700;
+        a{
+            color: $heading-color;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+    & > p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    & > .bk-readmore{
+        margin-top: 18px;
+        background: #444444;
+        color: #ffffff;
+        &:hover{
+            background: $theme-color;
+        }
+    }
+}
+
+.blog-slider-active{
+    margin-top: 20px;
+}
+
+@media #{$lg-layout}{
+    .blog-item .blog-item-meta .blog-item-meta-date{
+        width: 100%;
+    }
+}
+
+@media #{$md-layout}{
+    .header-appointment-button {
+        display: flex;
+        padding: 12px 20px;
+        justify-content: center;
+    }
+}

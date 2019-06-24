@@ -1,0 +1,32 @@
+/**
+ * Social Icons
+ */
+
+.social-icons{
+    ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        li{
+            list-style: none;
+            display: inline-block;
+            font-size: 16px;
+            color: #444444;
+            margin: 0 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                display: inline-block;
+                color: $body-color;
+            }
+            &:hover{
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

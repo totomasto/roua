@@ -1,0 +1,105 @@
+/**
+ * Section Title
+ */
+
+.section-title{
+    margin-bottom: 35px;
+    margin-top: -10px;
+    
+    h2, h3{
+        font-weight: 700;
+        color: $heading-color;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        margin-top: -10px;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 145px;
+            background: $theme-color;
+        }
+        span{
+            font-weight: 400;
+        }
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-style: italic;
+        color: $body-color;
+        line-height: 20px;
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-top: 22px;
+    }
+
+    &.text-center{
+        text-align: center;
+        h2, h3{
+            &::before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &.text-right{
+        text-align: right;
+        h2, h3{
+            &::before{
+                left: auto;
+                right: 0;
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &.section-title-2{
+        h2, h3{
+            &::before{
+                width: 50px;
+            }
+        }
+    }
+
+    &.section-title-dark{
+        h2{
+            font-size: 30px;
+            font-weight: 900;
+        }
+        h2, h3{
+            &::before{
+                width: 50px;
+                background: $heading-color;
+            }
+        }
+    }
+
+}
+
+@media #{$md-layout}{
+    .section-title{
+        margin-top: -5px;
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
+@media #{$sm-layout}{
+    .section-title{
+        margin-bottom: 25px;
+        &.section-title-dark{
+            h2{
+                font-size: 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+/*********************************************************************************
+
+	Template Name: Binke - Health & Medical Bootstrap4 Template
+	Description: A perfect template to build beautiful and unique medical websites. It comes with nice and clean design.
+	Version: 1.0
+
+	Note: This is style css.
+
+**********************************************************************************/
+
+
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Basic Styles
+	|	|
+	|	|___ Reset Styles
+	|	|___ Typography Styles
+	|	|___ Utilities
+	|	|___ Animations	
+	|
+	|
+	|___Elements Styles
+	|	|___ Button Styles
+	|	|___ Section Title
+	|	|___ Slider Elements
+	|	|___ Social Icons
+	|	|___ Call to Action
+	|	|___ Breadcrumb
+	|	|___ Progress Bar
+	|	|___ Pricebox
+	|	|___ Accordion
+	|
+	|
+	|___Blocks Styles
+	|	|___ Header Styles 
+	|	|___ Navigation Styles 
+	|	|___ Banner Styles 
+	|	|___ Featurebox
+	|	|___ Service
+	|	|___ Team Member
+	|	|___ Blog Item
+	|	|___ Testimonial
+	|	|___ Brand Logo
+	|	|___ Timetable
+	|	|___ Appointment Box
+	|	|___ About Styles
+	|	|___ Funfact
+	|	|___ Team Member Details
+	|	|___ 404 Styles
+	|	|___ Contact
+	|	|___ Blog Page Styles
+	|	|___ Widgets
+	|	|___ Comment Styles
+	|	|___ Footer Styles
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+
+// Needed Files
+@import 'variables';
+@import 'mixins';
+
+
+
+/*******************
+Basic Styles
+********************/
+@import 'basic/reset';
+@import 'basic/typography';
+@import 'basic/utilities';
+@import 'basic/animations';
+
+
+
+
+/*******************
+Elements Styles
+********************/
+@import 'elements/button';
+@import 'elements/section-title';
+@import 'elements/slider-elements';
+@import 'elements/social-icons';
+@import 'elements/call-to-action';
+@import 'elements/breadcrumb';
+@import 'elements/progress';
+@import 'elements/pricebox';
+@import 'elements/accordion';
+
+
+
+
+/*******************
+Blocks Styles
+********************/
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/banner';
+@import 'blocks/featurebox';
+@import 'blocks/service';
+@import 'blocks/team-member';
+@import 'blocks/blog-item';
+@import 'blocks/testimonial';
+@import 'blocks/brand-logo';
+@import 'blocks/timetable';
+@import 'blocks/appointment-box';
+@import 'blocks/pg-about';
+@import 'blocks/funfact';
+@import 'blocks/doctor-profile';
+@import 'blocks/404';
+@import 'blocks/contact';
+@import 'blocks/pg-blog';
+@import 'blocks/sidebar';
+@import 'blocks/comments';
+@import 'blocks/footer';

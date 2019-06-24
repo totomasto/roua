@@ -1,0 +1,157 @@
+/**
+ * Timetable
+ */
+
+.timetable-block{
+    text-align: center;
+    padding: 60px 30px;
+    
+    & > h5{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    ul{
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 0;
+        li{
+            list-style: none;
+        }
+    }
+
+    &.doctors-timetable{
+        .bk-button{
+            margin-top: 30px;
+        }
+    }
+
+    &.opening-hours{
+        padding: 60px 45px;
+        ul{
+            li{
+                font-weight: 700;
+                font-size: 15px;
+                border-bottom: 1px solid #484848;
+                padding: 12px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &:last-child{
+                    border-bottom: 0;
+                }
+                i{
+                    font-size: 16px;
+                    padding-right: 10px;
+                }
+                span{
+                    &.opening-hours-day{
+                        padding-right: 20px;
+                    }
+                    &.opening-hours-time{
+                        color: #ffffff;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    &.contact-info{
+        padding: 60px 55px;
+        ul{
+            li{
+                color: #000;
+                font-size: 14px;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                a{
+                    color: #ffffff;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                & +  li{
+                    margin-top: 20px;
+                }
+                p{
+                    line-height: 20px;
+                    margin-bottom: 0;
+                    flex-shrink: 100;
+                }
+                span{
+                   font-size: 20px;
+                   color: #ffffff;
+                   border: 1px solid darken($secondary-color, 7);
+                   background: darken($secondary-color, 7);
+                   height: 35px;
+                   width: 35px;
+                   display: inline-block;
+                   text-align: center;
+                   margin-right: 20px;
+                    i{
+                        line-height: 33px;
+                    } 
+                }
+            }
+        }
+    }
+
+}
+
+@media #{$lg-layout}{
+    .timetable-block.contact-info{
+        padding: 60px 30px;
+    }
+    .timetable-block.contact-info ul{
+        padding: 0;
+    }
+    .timetable-block.doctors-timetable .bk-button{
+        margin-top: 15px;
+    }
+    .timetable-block.opening-hours {
+        padding: 60px 30px;
+    }
+    .timetable-block.opening-hours ul li span.opening-hours-time{
+        width: 100%;
+    }
+}
+
+
+@media #{$md-layout}{
+    .timetable-block {
+        text-align: left;
+        padding: 60px 0;
+    }
+    .timetable-block.contact-info{
+        padding: 60px 0;
+    }
+    .timetable-block.doctors-timetable .bk-button {
+        margin-top: 10px;
+    }
+}
+
+@media #{$sm-layout}{
+    .timetable-block {
+        text-align: left;
+        padding: 60px 0;
+    }
+    .timetable-block.contact-info{
+        padding: 60px 0;
+    }
+    .timetable-block.doctors-timetable .bk-button{
+        margin-top: 0;
+    }
+}
+
+@media #{$xs-layout}{
+    .timetable-block.opening-hours {
+        padding: 50px 30px;
+    }
+    .timetable-block.opening-hours ul li span.opening-hours-time{
+        width: 100%;
+        display: block;
+    }
+}
